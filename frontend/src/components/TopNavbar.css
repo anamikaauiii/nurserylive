@@ -1,0 +1,53 @@
+.topbar {
+  height: 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #666;
+}
+
+/* LEFT */
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.link {
+  cursor: pointer;
+}
+
+/* Rewards pill */
+.rewards {
+  background: #ff6f6f;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* RIGHT */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon {
+  color: #888;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #555;
+}
