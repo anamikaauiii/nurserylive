@@ -1,24 +1,57 @@
-import { useState } from "react";
-import "./HeroSlider.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import { useNavigate } from "react-router-dom";
 
-import hero1 from "../assets/hero/hero1.jpg";
+import "swiper/css";
+import "swiper/css/navigation";
 
-const slides = [
-  { img: hero1, link: "/product-page" },
-];
-
-export default function HeroSlider() {
-  const [index, setIndex] = useState(0);
+const HeroSlider = () => {
+  const navigate = useNavigate();
 
   return (
     <div className="hero-slider">
-      <a href={slides[index].link}>
-        <img
-          src={slides[index].img}
-          className="hero-img"
-          alt="hero"
-        />
-      </a>
+      <Swiper
+        modules={[Navigation, Autoplay]}
+        navigation
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        loop={true}
+      >
+        <SwiperSlide>
+          <img
+            src="/hero/hero1.png"
+            alt="hero1"
+            onClick={() =>
+              navigate("/collections/balcony-and-terrace-garden")
+            }
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img
+            src="/hero/hero2.png"
+            alt="hero2"
+            onClick={() => navigate("/plants")}
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img
+            src="/hero/hero3.png"
+            alt="hero3"
+            onClick={() => navigate("/seeds")}
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img
+            src="/hero/hero4.png"
+            alt="hero4"
+            onClick={() => navigate("/gifts")}
+          />
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
-}
+};
+
+export default HeroSlider;
