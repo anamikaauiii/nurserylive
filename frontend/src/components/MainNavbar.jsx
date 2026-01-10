@@ -1,9 +1,12 @@
 import { useState } from "react";
 import LoginCard from "./LoginCard";
 import "./MainNavbar.css";
+import { useNavigate } from "react-router-dom";
+import { FiZap, FiShoppingCart } from "react-icons/fi";
 
 export default function MainNavbar() {
   const [showLogin, setShowLogin] = useState(false);
+  const navigate = useNavigate();   // ✅ ADD THIS
 
   return (
     <>
@@ -28,32 +31,23 @@ export default function MainNavbar() {
           </div>
 
           <div
-            className="login"
-            onClick={() => setShowLogin(true)}
-          >
-            ⚡ Login
-          </div>
+  className="login"
+  onClick={() => setShowLogin(true)}
+>
+  <FiZap size={18} />
+  <span>Login</span>
+</div>
 
-          <div className="cart">🛒</div>
+
+          {/* CART */}
+          <div
+  className="cart"
+  onClick={() => navigate("/cart")}
+>
+  <FiShoppingCart size={20} />
+</div>
+
         </div>
-      </div>
-
-      {/* CATEGORY BAR */}
-      <div className="category-bar">
-        {[
-          "Gardening",
-          "Plants",
-          "Seeds",
-          "Bulbs",
-          "Planters",
-          "Soil & Fertilizer",
-          "Gifts",
-          "Pebbles",
-          "Accessories",
-          "Corporate Gifting",
-        ].map((item) => (
-          <span key={item}>{item}</span>
-        ))}
       </div>
 
       {/* LOGIN CARD */}

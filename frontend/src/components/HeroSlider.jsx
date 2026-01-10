@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import "./HeroSlider.css";
 
 const HeroSlider = () => {
   const navigate = useNavigate();

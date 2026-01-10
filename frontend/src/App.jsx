@@ -5,6 +5,7 @@ import MainNavbar from "./components/MainNavbar";
 import CategoryBar from "./components/CategoryBar";
 import HeroSlider from "./components/HeroSlider";
 import AppPromo from "./components/AppPromo";
+import Cart from "./components/Cart";
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
           path="/collections/balcony-and-terrace-garden"
           element={<h1>Balcony Garden</h1>}
         />
+
+        {/* CART PAGE */}
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </>
   );

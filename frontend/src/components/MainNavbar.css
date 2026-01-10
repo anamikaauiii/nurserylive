@@ -81,3 +81,36 @@
 .category-bar span {
   cursor: pointer;
 }
+.login,
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* ICON STYLE (outline look) */
+.login svg,
+.cart svg {
+  stroke: #333;
+  stroke-width: 1.6;
+  fill: none;
+}
+
+/* Login text */
+.login span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Hover (optional but matches real site) */
+.login:hover,
+.cart:hover {
+  color: #000;
+}
+
+.login:hover svg,
+.cart:hover svg {
+  stroke: #000;
+}
