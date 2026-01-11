@@ -1,0 +1,55 @@
+const products = [
+  {
+    id: 1,
+    title: "Money Plant, Scindapsus (Pack of 3)",
+    image: "/products/money-plant.jpg",
+    oldPrice: 947,
+    price: 758,
+    discount: "Save 20%",
+    rating: 4.5,
+    reviews: 146,
+  },
+  {
+    id: 2,
+    title: "Set of 2 Mesmerising Flower Plants",
+    image: "/products/flower-set.jpg",
+    oldPrice: 748,
+    price: 598,
+    discount: "Save 20%",
+    rating: 4,
+    reviews: 9,
+  },
+  {
+    id: 3,
+    title: "Top 5 Easiest to Grow Plants",
+    image: "/products/top5-plants.jpg",
+    oldPrice: 1507,
+    price: 1130,
+    discount: "Save 25%",
+    rating: 5,
+    reviews: 42,
+  },
+  {
+    id: 4,
+    title: "Top 3 Mosquito Repellent Plants",
+    image: "/products/mosquito.jpg",
+    oldPrice: 1225,
+    price: 980,
+    discount: "Save 20%",
+    rating: 4,
+    reviews: 28,
+  },
+
+  {
+    id: 5,
+    title: "Top 5 Plants for Decoration on Auspicious Occasion",
+    image: "/products/auspicious.jpg",
+    oldPrice: 1765,
+    price: 1236,
+    discount: "Save 30%",
+    rating: 4.5,
+    reviews: 30,
+  },
+];
+
+export default products;

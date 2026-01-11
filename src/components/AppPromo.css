@@ -1,0 +1,65 @@
+.app-promo {
+  background: #ffffff;
+  padding: 60px 40px;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+/* TOP TEXT */
+.app-promo-top p {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* STORE BUTTONS */
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.store-buttons img {
+  height: 45px;
+  cursor: pointer;
+}
+
+/* QUICK LINKS */
+.quick-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+}
+
+.quick-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Outline icon styling */
+.quick-item svg {
+  stroke: #333;
+  stroke-width: 1.6;
+  fill: none;          /* THIS is the key */
+}
+
+/* Text */
+.quick-item span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Hover (same style, just darker) */
+.quick-item:hover svg,
+.quick-item:hover span {
+  stroke: #000;
+  color: #000;
+}

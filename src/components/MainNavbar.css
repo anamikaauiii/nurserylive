@@ -1,0 +1,116 @@
+.main-navbar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 18px 60px;
+  border-bottom: 1px solid #eee;
+  background: white;
+}
+
+/* LOGO */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1faa00;
+}
+
+/* SEARCH */
+.search-box {
+  flex: 1;
+  display: flex;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-box button {
+  padding: 0 18px;
+  border: none;
+  background: #ff6f6f;
+  color: white;
+  font-size: 16px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+/* RIGHT ACTIONS */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.support {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #333;
+}
+
+.support span {
+  font-size: 12px;
+  color: #777;
+}
+
+.login {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.cart {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* CATEGORY BAR */
+.category-bar {
+  display: flex;
+  gap: 22px;
+  padding: 12px 60px;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.category-bar span {
+  cursor: pointer;
+}
+.login,
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* ICON STYLE (outline look) */
+.login svg,
+.cart svg {
+  stroke: #333;
+  stroke-width: 1.6;
+  fill: none;
+}
+
+/* Login text */
+.login span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Hover (optional but matches real site) */
+.login:hover,
+.cart:hover {
+  color: #000;
+}
+
+.login:hover svg,
+.cart:hover svg {
+  stroke: #000;
+}

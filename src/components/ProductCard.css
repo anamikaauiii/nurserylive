@@ -1,0 +1,133 @@
+.nl-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover shadow */
+.nl-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Discount badge */
+.nl-discount {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #ff6f61;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 6px;
+  z-index: 2;
+}
+
+/* Image */
+.nl-image {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.nl-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.nl-card:hover .nl-image img {
+  transform: scale(1.08);
+}
+
+/* Carousel arrows */
+.nl-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 2px 6px;
+}
+
+.left {
+  left: 6px;
+}
+
+.right {
+  right: 6px;
+}
+
+/* Price */
+.nl-price {
+  margin-top: 10px;
+}
+
+.nl-old {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 6px;
+  font-size: 13px;
+}
+
+.nl-new {
+  color: #ff3d3d;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Title */
+.nl-title {
+  font-size: 14px;
+  margin: 8px 0;
+  min-height: 36px;
+}
+
+/* Rating */
+.nl-rating {
+  font-size: 13px;
+  color: #f4b400;
+}
+
+.nl-rating span {
+  color: #555;
+  margin-left: 6px;
+}
+
+/* Offer */
+.nl-offer {
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+/* Add to cart – hover only */
+.nl-cart-btn {
+  margin-top: auto;
+  background: #ff6f61;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.nl-card:hover .nl-cart-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nl-cart-btn:hover {
+  background: #ff5a4d;
+}

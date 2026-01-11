@@ -1,0 +1,35 @@
+.plants-section {
+  padding: 40px 60px;
+  background: #fff;
+}
+
+.plants-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Grid like Nurserylive category page */
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+/* Tablet */
+@media (max-width: 1200px) {
+  .plants-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .plants-section {
+    padding: 20px;
+  }
+
+  .plants-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
